@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Модальное окно для добавления задачи -->
+    <div class="modal" id="modalAdd">
+      <div class="modal-content">
+        <form>
+          <input type="text" id="task" placeholder="New task..." />
+          <button type="submit">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Модальное окно для редактирования -->
+    <div class="modal" id="modalEdit">
+      <div class="modal-content">
+        <h2>Edit Task</h2>
+        <input type="text" id="editTask" />
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
+
+    <!-- Кнопка вызова добавления -->
+    <div class="addBtn">
+      <button id="addBtn">Add New Task</button>
+    </div>
+
+    <!-- Поиск -->
+    <div class="search">
+      <input type="text" placeholder="Search tasks..." id="search" />
+    </div>
+
+    <!-- Список задач -->
+    <ul id="list"></ul>
+
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>
